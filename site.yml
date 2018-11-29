@@ -1,0 +1,6 @@
+---
+
+- hosts: nut
+
+  roles:
+    - nut
