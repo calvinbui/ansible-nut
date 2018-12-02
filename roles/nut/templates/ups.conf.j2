@@ -142,3 +142,5 @@ maxretry = {{ nut_max_retry }}
 [{{ nut_ups_name }}]
   driver = {{ nut_ups_driver }}
   port   = {{ nut_ups_port }}
+  ignorelb
+  override.battery.charge.low = {{ nut_ups_battery_charge_low }}
