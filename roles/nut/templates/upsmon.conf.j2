@@ -83,7 +83,7 @@
 # MONITOR su700@server.example.com 1 upsmon secretpass slave
 # MONITOR myups@localhost 1 upsmon pass master  (or slave)
 
-MONITOR {{ nut_ups_name }}@{{ nut_host }} 1 {{ nut_user_name }} {{ nut_user_password }} master
+MONITOR {{ nut_ups_name }}@{{ nut_host }} 1 {{ nut_user_master_name }} {{ nut_user_master_password }} master
 
 # --------------------------------------------------------------------------
 # MINSUPPLIES <num>
