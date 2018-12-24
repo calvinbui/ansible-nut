@@ -1,6 +1,5 @@
 ---
 
-- hosts: nut
-
+- hosts: all
   roles:
     - nut
