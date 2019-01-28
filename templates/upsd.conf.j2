@@ -108,5 +108,6 @@
 # for more information on the SSL support in NUT.
 
 LISTEN 127.0.0.1 3493
-LISTEN {{ ansible_default_ipv4.address }} 3493
+LISTEN {{ hostvars[inventory_hostname]['ansible_default_ipv4']['address']
+ }} 3493
 LISTEN ::1 3493

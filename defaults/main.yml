@@ -1,0 +1,16 @@
+---
+
+nut_host: localhost
+nut_max_retry: 3
+nut_mode: netserver
+
+nut_ups_name: OR600ELCDRM1U
+nut_ups_driver: usbhid-ups
+nut_ups_port: auto
+nut_ups_battery_charge_low: 80
+
+nut_user_master_name: monuser
+nut_user_master_password: monpassword
+
+nut_user_slave_name: monuserslave
+nut_user_slave_password: monslavepassword
