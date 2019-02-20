@@ -26,4 +26,8 @@
     - upsmon.conf
     - nut.conf
   notify: Restart NUT
-  become: true
+
+- name: Remove systemd shutdown script
+  file:
+    path: /lib/systemd/system-shutdown/nutshutdown
+    state: absent
