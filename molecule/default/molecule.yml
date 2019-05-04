@@ -6,7 +6,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: ansible-acme-certificates
+  - name: ansible-nut
     image: ubuntu:${UBUNTU_IMAGE_TAG:-latest}
 provisioner:
   name: ansible

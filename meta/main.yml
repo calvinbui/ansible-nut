@@ -8,7 +8,8 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - all
+        - bionic
+        - xenial
   galaxy_tags:
     - nut
     - ups
