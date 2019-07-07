@@ -7,7 +7,7 @@ lint:
   name: yamllint
 platforms:
   - name: ansible-nut
-    image: ubuntu:${UBUNTU_IMAGE_TAG:-latest}
+    image: geerlingguy/docker-ubuntu1804-ansible
 provisioner:
   name: ansible
   options:
