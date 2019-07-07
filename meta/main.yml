@@ -4,12 +4,11 @@ galaxy_info:
   description: Network UPS Tools (NUT) for Ubuntu
   company: https://calvin.me
   license: GPLv3
-  min_ansible_version: 2.7
+  min_ansible_version: 2.8
   platforms:
     - name: Ubuntu
       versions:
         - bionic
-        - xenial
   galaxy_tags:
     - nut
     - ups
