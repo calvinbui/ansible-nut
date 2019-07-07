@@ -19,14 +19,6 @@ N/A
 
 `nut_mode`: Recognized values are none, standalone, netserver and netclient. See https://networkupstools.org/docs/man/nut.conf.html
 
-`nut_ups_name`: Name of your UPS
-
-`nut_ups_driver`: Driver for your UPS from https://networkupstools.org/stable-hcl.html
-
-`nut_ups_port`: How to connect to your UPS.
-
-`nut_ups_battery_charge_low`: What level should battery be before shutting things off.
-
 `nut_user_master_name`: Username for master user
 
 `nut_user_master_password`: Password for master user
@@ -34,6 +26,12 @@ N/A
 `nut_user_slave_name`: Username for slave user
 
 `nut_user_slave_password`: Password for slave user
+
+`nut_ups_devices`: List of UPS devices. Used to configure `ups.conf`
+
+`nut_ups_monitors`: List of UPS devices to monitor. Used to configure `upsmon.conf`
+
+`nut_ups_listen`: List of interfaces to listen on. Used for `upsd.conf`
 
 ## Dependencies
 
