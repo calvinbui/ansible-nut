@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/calvinbui/ansible-nut.svg?branch=master)](https://travis-ci.com/calvinbui/ansible-nut)
+![GitHub release](https://img.shields.io/github/release/calvinbui/ansible-nut.svg)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/36575.svg)
+![Ansible Role](https://img.shields.io/ansible/role/d/36575.svg)
+
 # Ansible Network UPS Tools
 
 Running NUT in a VM with other computers connecting as slaves
