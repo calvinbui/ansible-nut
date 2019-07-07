@@ -29,5 +29,7 @@
       file:
         path: /etc/nut/dummy.dev
         state: touch
+        modification_time: preserve
+        access_time: preserve
   roles:
     - role: ansible-nut
