@@ -14,7 +14,7 @@
 
 - name: Force systemd to re-execute itself
   systemd:
-    daemon_reexec: yes
+    daemon_reexec: true
 
 - name: Install NUT configuration files.
   template:
