@@ -82,9 +82,9 @@
 # MONITOR myups@bigserver 1 monmaster blah master
 # MONITOR su700@server.example.com 1 upsmon secretpass slave
 # MONITOR myups@localhost 1 upsmon pass master  (or slave)
-
-MONITOR {{ nut_ups_name }}@{{ nut_host }} 1 {{ nut_user_master_name }} {{ nut_user_master_password }} master
-
+{% for monitors in nut_ups_monitors %}
+{{ monitors }}
+{% endfor %}
 # --------------------------------------------------------------------------
 # MINSUPPLIES <num>
 #
@@ -101,7 +101,7 @@ MONITOR {{ nut_ups_name }}@{{ nut_host }} 1 {{ nut_user_master_name }} {{ nut_us
 # for this to make sense!  See big-servers.txt in the docs subdirectory
 # for more information and ideas on how to use this feature.
 
-MINSUPPLIES 1
+MINSUPPLIES 0
 
 # --------------------------------------------------------------------------
 # SHUTDOWNCMD "<command>"

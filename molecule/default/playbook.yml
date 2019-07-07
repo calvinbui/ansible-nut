@@ -2,6 +2,15 @@
 - name: Converge
   hosts: all
   become: true
+  vars:
+    nut_ups_devices:
+      - |
+        [dummy]
+          driver = dummy-ups
+          port = dummy.dev
+          desc = "dummy-ups in dummy mode"
+    nut_ups_monitors: []
+    nut_ups_listen: "LISTEN 0.0.0.0 3493"
   pre_tasks:
     - name: Update apt cache.
       apt:
@@ -12,16 +21,9 @@
       until: result is success
       retries: 5
       delay: 5
-    - name: Install iproute2
-      apt:
-        name: iproute2
-        state: present
-      changed_when: false
-      register: result
-      until: result is success
-      retries: 5
-      delay: 5
-    - name: Gather ipv4 address fact again
-      setup:
+    - name: Create fake UPS data file
+      file:
+        path: /etc/nut/dummy.dev
+        state: touch
   roles:
     - role: ansible-nut
