@@ -21,6 +21,10 @@
       until: result is success
       retries: 5
       delay: 5
+    - name: Create /etc/nut
+      file:
+        path: /etc/nut
+        state: directory
     - name: Create fake UPS data file
       file:
         path: /etc/nut/dummy.dev
