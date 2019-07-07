@@ -8,6 +8,7 @@ lint:
 platforms:
   - name: ansible-nut
     image: geerlingguy/docker-ubuntu1804-ansible
+    command: ""
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: true

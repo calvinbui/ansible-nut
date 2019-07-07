@@ -12,9 +12,9 @@
   retries: 5
   delay: 5
 
-- name: Force systemd to re-execute itself
+- name: Force systemd to reload itself
   systemd:
-    daemon_reexec: true
+    daemon_reload: true
 
 - name: Install NUT configuration files.
   template:
