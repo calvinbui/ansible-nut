@@ -35,4 +35,4 @@
   file:
     path: /lib/systemd/system-shutdown/nutshutdown
     state: absent
-  when: nut_remove_shutdown_script == true
+  when: nut_remove_shutdown_script
